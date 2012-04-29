@@ -1,4 +1,20 @@
-tako-gzip
-=========
+# tako-gzip
 
-gzip compression for tako
+A simple gzip middleware for Tako.
+
+Uses [negotiator](http://search.npmjs.org/#/negotiator) to only gzip when the http request `Accept-Encoding` include gzip.
+
+## Usage
+
+```javascript
+var gzip = require("tako-gzip");
+
+// gzip responses when possible
+app.on('request', gzip);
+
+// response is now gzipped.
+app.route('/').json({
+  "hello": "gzip"
+});
+```
+

@@ -1,0 +1,20 @@
+{
+  "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.se)",
+  "name": "tako-gzip",
+  "description": "gzip for tako",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kesla/tako-gzip.git"
+  },
+  "main": "gzip.js",
+  "peerDependencies": {
+    "tako": "~0.2.5"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "negotiator": "~0.2.3"
+  }
+}
